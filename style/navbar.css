@@ -37,6 +37,22 @@
     font-weight: bold; /* Làm cho chữ đậm */
     white-space: nowrap; /* Ngăn không cho chữ bị xuống dòng */
 }
+.nativebar .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    font-size: 1.5rem; /* Adjust font size */
+    font-family: 'Alegreya', serif; /* Use Alegreya font */
+    font-weight: bold; /* Make text bold */
+    white-space: nowrap; /* Prevent text from wrapping */
+    transition: color 0.3s; /* Add transition for hover effect */
+}
+
+.nativebar .logo a:hover {
+    color: #f8f8f8; /* Change color on hover */
+}
+
 
 .nativebar nav {
     display: flex;
