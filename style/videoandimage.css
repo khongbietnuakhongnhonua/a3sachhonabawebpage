@@ -173,7 +173,8 @@ button.hidden {
     justify-content: center; /* Căn giữa ngang */
     align-items: center; /* Căn giữa dọc */
     border-radius: 50px;
-    background-color: #f3f3f3;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Thêm hiệu ứng bóng đổ */
 }
 
 /* Styling cho nút bấm */
