@@ -1,0 +1,106 @@
+.cover {
+    background: url('https://cdn.a3sachhonaba.com/resource/a3sachhonaba.com/index_background_1.webp') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh; /* Điều chỉnh chiều cao theo ý muốn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Đảm bảo không có nội dung tràn ra ngoài */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước */
+}
+
+.header h1 {
+    font-size: 3rem; /* Điều chỉnh kích thước chữ */
+    color: #fff; /* Đổi màu chữ để nổi bật trên nền tối */
+    border: 10px solid white;
+    padding: 20px; /* Đệm bên trong khung */
+    border-radius: 25px; /* Bo tròn các góc khung */
+    width: 50vw; /* Chiều rộng khung bằng 50% kích thước cửa sổ */
+    box-sizing: border-box; /* Đảm bảo tính toán chiều rộng chính xác */
+    text-align: center; /* Canh giữa nội dung */
+    margin: 0 auto; /* Canh giữa khung */
+    font-family: 'Alegreya', serif; /* Sử dụng font Alegreya cho tiêu đề */
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước */
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 20px;
+}
+
+.socialmedia img {
+    max-width: 10vw;
+    max-height: 10vh;
+    margin: 0 10px;
+}
+
+.cssbuttons-io-button {
+    background: #000;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+  
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+  
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+  
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+  
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+  
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+  
+.button{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 20px;
+}

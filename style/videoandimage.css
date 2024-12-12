@@ -1,0 +1,194 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước */
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+}
+
+/* Styling cho phần bìa */
+.cover {
+    background: url('https://cdn.a3sachhonaba.com/resource/a3sachhonaba.com/index_background_1.webp') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh; /* Điều chỉnh chiều cao theo ý muốn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Đảm bảo không có nội dung tràn ra ngoài */
+}
+
+/* Styling cho tiêu đề */
+.header h1 {
+    font-size: 3rem; /* Điều chỉnh kích thước chữ */
+    color: #fff; /* Đổi màu chữ để nổi bật trên nền tối */
+    border: 10px solid white;
+    padding: 20px; /* Đệm bên trong khung */
+    border-radius: 25px; /* Bo tròn các góc khung */
+    width: 50vw; /* Chiều rộng khung bằng 50% kích thước cửa sổ */
+    box-sizing: border-box; /* Đảm bảo tính toán chiều rộng chính xác */
+    text-align: center; /* Canh giữa nội dung */
+    margin: 0 auto; /* Canh giữa khung */
+    font-family: 'Alegreya', serif; /* Sử dụng font Alegreya cho tiêu đề */
+}
+
+/* Styling cho phần nội dung */
+.content {
+    text-align: center;
+    color: #000000;
+    font-family: 'Alegreya', serif;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Styling cho các nút trong carousel */
+.carousel-container .button-container button {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút theo chiều ngang */
+    align-items: center; /* Căn giữa các nút theo chiều dọc */
+    gap: 10px; /* Tạo khoảng cách giữa các nút */
+    margin-top: 5vh; /* Tạo khoảng cách giữa các nút và nội dung khác */
+}
+
+/* Styling cho các thẻ img */
+.single-image img, .carousel-item img, .single-video video {
+    width: calc((33vw + 33vh) / 2);
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styling cho các button */
+button {
+    display: inline-block; /* Đảm bảo các nút nằm trên cùng một hàng */
+    margin: 10px; /* Tạo khoảng cách giữa các nút */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgb(0, 38, 255);
+    box-shadow: 0 4px 8px rgba(0, 38, 255, 1);
+}
+
+button.hidden {
+    display: none;
+}
+
+/* Styling cho các đoạn văn bản */
+.single-image p, .carousel-container p, .single-video p, .content p {
+    font-size: calc((1.7vw + 1.7vh) / 2);
+    margin: 10px auto; /* Cân chỉnh đoạn văn bản */
+    text-align: center; /* Căn giữa đoạn văn bản */
+    max-height: 40%;
+    max-width: 75%;
+    line-height: 1.5;
+}
+
+/* Căn chỉnh các nút */
+.button-container {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút theo chiều ngang */
+    align-items: center; /* Căn giữa các nút theo chiều dọc */
+    gap: 10px; /* Tạo khoảng cách giữa các nút */
+}
+
+/* Styling cho phần mở rộng toàn màn hình */
+.fullscreen-media {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+}
+
+/* Loại bỏ hiệu ứng hover khi phóng to */
+.single-image img:not(.fullscreen-media):hover,
+.carousel-item img:not(.fullscreen-media):hover,
+.single-video video:not(.fullscreen-media):hover {
+    transform: scale(1.05);
+}
+
+/* Styling cho overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Animation cho single-image */
+@keyframes singleImageFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.single-image img {
+    animation: singleImageFade 1s ease-in-out;
+}
+
+/* Animation cho carousel-item */
+@keyframes carouselSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.carousel-item {
+    animation: carouselSlide 0.5s ease-in-out;
+}
+.carousel-container, .single-image, .single-video {
+    margin: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center; /* Căn giữa dọc */
+    border-radius: 50px;
+    background-color: #f3f3f3;
+}
+
+/* Styling cho nút bấm */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Màu nền */
+    color: white; /* Màu chữ */
+    text-align: center;
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border-radius: 5px; /* Bo tròn các góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+    box-shadow: 0px 0px 10px rgb(0, 86, 179, 1);
+}
