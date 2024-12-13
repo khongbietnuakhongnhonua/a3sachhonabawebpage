@@ -24,12 +24,14 @@
     font-family: 'Alegreya', serif; /* Sử dụng font Alegreya cho tiêu đề */
 }
 
+/* Thiết lập toàn cục để ẩn thanh cuộn ngang */
 html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước */
     overflow-x: hidden; /* Ẩn thanh cuộn ngang */
 }
+
 
 .socialmedia {
     display: flex;
