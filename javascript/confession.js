@@ -3,7 +3,6 @@ async function loadConfessions() {
     const data = await response.json();
 
     const confessionsContainer = document.querySelector('.cfs-content');
-
     const keys = Object.keys(data.cfs_id).reverse();
 
     for (const id of keys) {
@@ -20,6 +19,10 @@ async function loadConfessions() {
         pId.textContent = `#cfs${id}`;
         divConfession.appendChild(pId);
 
+        // Thêm <hr> sau cfs_id
+        const hr = document.createElement('hr');
+        divConfession.appendChild(hr);
+
         // Tạo phần tử cho cfs_content
         const pContent = document.createElement('p');
         pContent.innerHTML = confessionContent;
@@ -31,10 +34,6 @@ async function loadConfessions() {
             pReply.innerHTML = `<em>${confessionReply.replace(/\n/g, '<br>')}</em>`;
             divConfession.appendChild(pReply);
         }
-
-        // Thêm đường ngang giữa mỗi confession
-        const hr = document.createElement('hr');
-        divConfession.appendChild(hr);
 
         // Thêm div confession vào confessionsContainer
         confessionsContainer.appendChild(divConfession);

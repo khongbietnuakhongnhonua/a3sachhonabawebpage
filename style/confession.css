@@ -166,13 +166,22 @@ html, body {
 
 
 
-
-.cfs-content{
-    padding-left: 5vw;
-    padding-right: 5vw;
-    max-width: 90vw;
+.cfs{ 
+    width: 90vw;
+    margin: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center; /* Căn giữa dọc */
+    border-radius: 50px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Thêm hiệu ứng bóng đổ */
 }
+
 .cfs-content p{
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    
     font-size: 1.5vw;
     font-family: 'Alegreya', serif;
     text-align: justify;
