@@ -33,6 +33,13 @@ html, body {
 }
 
 
+.content {
+    text-align: center;
+    color: #000000; /* Màu chữ đen cho phần nội dung */
+    font-family: 'Alegreya', serif; /* Sử dụng font Roboto cho phần nội dung */
+}
+
+
 .button {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -155,10 +162,10 @@ html, body {
 
 .confessionsubmit{
     max-width: 100%;
-    font-size: calc((1.5vw + 1.5vh) / 2);
+    font-size: 2rem;
     font-family: "Alegreya", serif;
     font-optical-sizing: auto;
-    font-weight: 1vw;
+    font-weight: 3vw;
     font-style: normal;
     color: #000000;
     text-align: center;
@@ -188,7 +195,7 @@ html, body {
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     
-    font-size: 1.5vw;
+    font-size: 2rem;    
     font-family: 'Alegreya', serif;
     text-align: justify;
 }

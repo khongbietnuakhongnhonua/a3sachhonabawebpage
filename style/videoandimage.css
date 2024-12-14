@@ -34,7 +34,6 @@ html, body {
 
 
 .content {
-    padding: 2rem;
     text-align: center;
     color: #000000; /* Màu chữ đen cho phần nội dung */
     font-family: 'Alegreya', serif; /* Sử dụng font Roboto cho phần nội dung */
