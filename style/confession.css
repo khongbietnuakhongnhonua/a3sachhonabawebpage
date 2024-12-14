@@ -173,10 +173,16 @@ html, body {
     padding-bottom: 5vh;
     justify-content: center; /* Căn giữa ngang */
     align-items: center; /* Căn giữa dọc */
-    border-radius: 15px;
-    
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Thêm hiệu ứng bóng đổ */
 }
+
+.cfs:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Tăng cường hiệu ứng bóng đổ khi di chuột */
+}
+
 
 .cfs-content p{
     margin-left: 2.5vw;
