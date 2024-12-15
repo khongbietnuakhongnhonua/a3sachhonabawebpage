@@ -169,6 +169,7 @@ html, body {
     font-style: normal;
     color: #000000;
     text-align: center;
+    text-wrap: nowrap;
 }
 
 
