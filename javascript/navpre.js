@@ -4,7 +4,7 @@ function addVersionToURL(url) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch(addVersionToURL('/navbar.html'))
+    fetch(addVersionToURL('/storage/navbar.html'))
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
