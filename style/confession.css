@@ -162,7 +162,7 @@ html, body {
 
 .confessionsubmit{
     max-width: 100%;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-family: "Alegreya", serif;
     font-optical-sizing: auto;
     font-weight: 3vw;
@@ -195,7 +195,7 @@ html, body {
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     
-    font-size: 2rem;    
+    font-size: 1.25rem;    
     font-family: 'Alegreya', serif;
     text-align: justify;
 }
