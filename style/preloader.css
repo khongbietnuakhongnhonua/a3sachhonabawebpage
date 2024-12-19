@@ -6,7 +6,6 @@
     backdrop-filter: blur(5px);
 }
 
-
 #preloader {
     position: fixed;
     top: 50%;
@@ -20,14 +19,10 @@
     z-index: 10000;
 }
 
-#preloader::before {
-    content: "";
-    position: absolute;
+#preloader img {
     width: 120px;
     height: 120px;
-    background: url('https://cdn.a3sachhonaba.com/resource/storage/loader.gif') no-repeat center center;
     border-radius: 50%;
-    background-size: contain;
 }
 
 #preloader::after {
@@ -51,10 +46,3 @@
     transition: opacity 1s ease-out;
     z-index: 0;
 }
-#preloader .hidden{
-    z-index: 0;
-}   
-#hidebody .hidden{
-    z-index: 0;
-}   
-
