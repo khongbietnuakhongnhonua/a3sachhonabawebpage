@@ -16,7 +16,7 @@ async function loadConfessions() {
 
         // Tạo phần tử cho cfs_id
         const pId = document.createElement('p');
-        pId.textContent = `#cfs${id}`;
+        pId.textContent = `#Cfs${id}`;
         divConfession.appendChild(pId);
 
         // Thêm <hr> sau cfs_id
