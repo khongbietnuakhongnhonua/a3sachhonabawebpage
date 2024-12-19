@@ -21,7 +21,7 @@
     box-sizing: border-box; /* Đảm bảo tính toán chiều rộng chính xác */
     text-align: center; /* Canh giữa nội dung */
     margin: 0 auto; /* Canh giữa khung */
-    font-family: 'Alegreya', serif; /* Sử dụng font Alegreya cho tiêu đề */
+    font-family: 'Montserrat', serif; /* Sử dụng font Montserrat cho tiêu đề */
 }
 
 /* Thiết lập toàn cục để ẩn thanh cuộn ngang */

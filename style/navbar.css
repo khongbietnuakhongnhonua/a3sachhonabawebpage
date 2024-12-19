@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..900;1,400..900&display=swap');
 .nativebar {
     padding: 1rem;
     display: flex;
@@ -33,7 +33,7 @@
 
 .nativebar .logo span {
     font-size: 1.5rem; /* Điều chỉnh kích thước chữ */
-    font-family: 'Alegreya', serif; /* Sử dụng font Alegreya cho logo */
+    font-family: 'Montserrat', serif; /* Sử dụng font Montserrat cho logo */
     font-weight: bold; /* Làm cho chữ đậm */
     white-space: nowrap; /* Ngăn không cho chữ bị xuống dòng */
 }
@@ -43,7 +43,7 @@
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit text color from parent */
     font-size: 1.5rem; /* Adjust font size */
-    font-family: 'Alegreya', serif; /* Use Alegreya font */
+    font-family: 'Montserrat', serif; /* Use Montserrat font */
     font-weight: bold; /* Make text bold */
     white-space: nowrap; /* Prevent text from wrapping */
     transition: color 0.3s; /* Add transition for hover effect */
@@ -74,7 +74,7 @@
     color: white;
     text-decoration: none;
     font-size: 1.1rem; /* Điều chỉnh kích thước chữ của liên kết */
-    font-family: 'Alegreya', serif;
+    font-family: 'Montserrat', serif;
     white-space: nowrap; /* Ngăn không cho chữ bị xuống dòng */
     transition: color 0.3s; /* Thêm hiệu ứng chuyển màu */
 }
