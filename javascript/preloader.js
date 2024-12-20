@@ -15,12 +15,12 @@ window.addEventListener("load", function() {
 window.addEventListener("load", function() {
     setTimeout(function() {
         hidebody.style.display = "none";
-    }, 1000);
+    }, 1250);
 });
 
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function() {
     setTimeout(function() {
         loader.style.display = "none";
-    }, 1000);
+    }, 1250);
 });
