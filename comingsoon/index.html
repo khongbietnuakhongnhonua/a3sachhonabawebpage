@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="icon" type="image/x-icon" href="https://cdn.a3sachhonaba.com/resource/icon/a3sachhonaba.webp">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font.css">
+    <meta charset="UTF-8">
+    <title>A3 Sạch Hơn Aba - Coming Soon!</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://chuyentin.a3sachhonaba.com/";
+        }, 5000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="comingsoon">
+            <p>Coming Soon!</p>
+        </div>
+        <div id="progress-bar">
+            <div id="progress-bar-fill"></div>
+        </div>
+    </div>
+    <script>
+        let progressBarFill = document.getElementById('progress-bar-fill');
+        let width = 0;
+        let interval = setInterval(function() {
+            if (width >= 100) {
+                clearInterval(interval);
+            } else {
+                width++;
+                progressBarFill.style.width = width + '%';
+            }
+        }, 50);
+
+        // Cập nhật thời gian để thanh tiến trình hoàn thành trong 5 giây
+        let duration = 5000; // 5 giây
+        let intervalTime = duration / 100;
+        let progressInterval = setInterval(function() {
+            if (width >= 100) {
+                clearInterval(progressInterval);
+            } else {
+                width++;
+                progressBarFill.style.width = width + '%';
+            }
+        }, intervalTime);
+    </script>
+</body>
+</html>

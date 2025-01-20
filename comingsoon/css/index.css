@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Thêm dòng này để các phần tử con xếp theo cột */
+}
+
+.container {
+    max-width: 600px; /* Điều chỉnh giá trị này theo ý bạn */
+    width: 100%;
+    text-align: center;
+}
+
+.comingsoon {
+    font-family: "Cherry Bomb One", serif;
+    font-size: 5rem;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#progress-bar {
+    width: 100%;
+    max-width: 600px; /* Giới hạn chiều rộng tối đa */
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin-top: 20px; /* Thêm khoảng cách giữa dòng chữ và thanh tiến trình */
+}
+
+#progress-bar-fill {
+    width: 0%;
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out; /* Thêm chuyển động mượt mà */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
